@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScrollArea_InputFileCreater</class>
+ <widget class="QScrollArea" name="ScrollArea_InputFileCreater">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1228</width>
+    <height>863</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Input File Creater</string>
+  </property>
+  <property name="widgetResizable">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="scrollAreaWidgetContents">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1226</width>
+     <height>861</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label_Header">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>1191</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Carefully read the instructions before you start:
+1. Read the material name.
+2. Please replace the sample text with given material name input file.
+3. Replace calculation value with '%s', example (calculation = '%s' ,)
+4. Add the file.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit_InputText">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>160</y>
+      <width>1221</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string>
+ &amp;CONTROL
+                 calculation = '%s' ,
+                      outdir = './' ,
+                  pseudo_dir = '/opt/home/Himanshu/DataBaseProject/Janus/0-1/QE_Pseudo/PBE-PAW' ,
+                      prefix = 'Relax' ,
+                   verbosity = 'low' ,
+                     disk_io = 'none' ,
+               etot_conv_thr = 1.0D-9 ,
+               forc_conv_thr = 1.0D-6 ,
+                       nstep = 100 ,
+                     tstress = .true. ,
+                     tprnfor = .true. ,
+ /
+ &amp;SYSTEM
+                       ibrav = 4,
+                   celldm(1) = 6.3249133389 ,
+                   celldm(3) = 5.9755004482 ,
+                         nat = 3,
+                        ntyp = 3,
+                     ecutwfc = 50 ,
+                     ecutrho = 500 ,
+                 occupations = 'smearing' ,
+                     degauss = 3.6D-3 ,
+                    smearing = 'fermi-dirac' ,
+ /
+ &amp;ELECTRONS
+            electron_maxstep = 150,
+                    conv_thr = 1.0D-13 ,
+                 mixing_mode = 'plain' ,
+                 mixing_beta = 0.3D0 ,
+             diagonalization = 'david' ,
+              diago_full_acc = .true. ,
+ /
+ &amp;IONS
+ /
+ATOMIC_SPECIES
+  Cr 51.996100d0 Cr.UPF
+  Se 78.960000d0 Se.UPF
+  Te 127.600000d0 Te.UPF
+ATOMIC_POSITIONS crystal 
+  Cr   0.3333535194d0   0.1667070393d0   0.5064453918d0
+  Se   0.6666464806d0   0.8332929607d0   0.5819348658d0
+  Te   0.6666464806d0   0.8332929607d0   0.4180651343d0
+K_POINTS automatic 
+  24 24 1   0 0 0</string>
+    </property>
+    <property name="overwriteMode">
+     <bool>true</bool>
+    </property>
+    <property name="cursorWidth">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_AddFile">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>800</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add File</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Exit">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>800</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Overwrite">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>800</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Overwrite</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Message">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>800</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_MaterialInformation">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>114</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Material Name : Silicon
+alat = 5.4306</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

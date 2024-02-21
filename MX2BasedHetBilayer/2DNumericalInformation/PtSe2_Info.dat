@@ -1,0 +1,45 @@
+A = 3.6305 Angstrom
+B = 3.6305 Angstrom
+C = 20.0000 Angtrom
+alpha = 90.00 Degree
+beta = 90.00 Degree
+gamma = 120.00 Degree
+
+Unit Cell Volume = 228.298910000 Angs^3
+Density = 2.567560000 g/cm^3
+Cell Parameters {alat=6.8436162138}
+   0.501250536  -0.868191396   0.000000000
+   0.501250536   0.868191396   0.000000000
+   0.000000000   0.000000000   5.522594867
+
+Atomic Positions {crystal} 
+Pt       0.333333333   0.666666667   0.500000000
+Se       0.666666667   0.333333333   0.426172383
+Se       0.666666667   0.333333333   0.573827617
+
+
+Band Gap = 0.0070 eV
+Band Edge with respect to vacuum: Ev = 0 eV
+VBM = -4.2762 eV
+CBM = -4.2692 eV
+Work Function = 4.7206
+
+Lowdin Charges:
+    
+           1           1  0.644493892777680        1.10222704938770     
+   8.75776543136428     
+     Atom #   1: total charge =  10.5045, s =  0.6445, 
+     Atom #   1: total charge =  10.5045, p =  1.1022, 
+     Atom #   1: total charge =  10.5045, d =  8.7578, 
+           1           1   1.69108923647010        4.01775359664364     
+   9.99980829546425     
+     Atom #   2: total charge =  15.7087, s =  1.6911, 
+     Atom #   2: total charge =  15.7087, p =  4.0178, 
+     Atom #   2: total charge =  15.7087, d =  9.9998, 
+           1           1   1.69108923647010        4.01775359677002     
+   9.99980829546425     
+     Atom #   3: total charge =  15.7087, s =  1.6911, 
+     Atom #   3: total charge =  15.7087, p =  4.0178, 
+     Atom #   3: total charge =  15.7087, d =  9.9998, 
+     Spilling Parameter:   0.0019
+ 

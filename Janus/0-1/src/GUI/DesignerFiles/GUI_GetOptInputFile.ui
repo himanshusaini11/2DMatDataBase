@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScrollArea_InputFileCreater</class>
+ <widget class="QScrollArea" name="ScrollArea_InputFileCreater">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1228</width>
+    <height>863</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Input File Creater</string>
+  </property>
+  <property name="widgetResizable">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="scrollAreaWidgetContents">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1226</width>
+     <height>861</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label_Header">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>3</y>
+      <width>1191</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Carefully read the instructions before you start:
+1. Read the material name.
+2. Please replace the sample text with given material name input file.
+3. Make sure NCPP is used.
+4. Use atleast 2 times or 3 times more nbnd.
+5. Add the file.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="plainTextEdit_InputText">
+    <property name="geometry">
+     <rect>
+      <x>2</x>
+      <y>160</y>
+      <width>1221</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="plainText">
+     <string>
+ &amp;CONTROL
+                 calculation = 'scf' ,
+                      outdir = './' ,
+                  pseudo_dir = '/opt/home/Himanshu/DataBaseProject/Janus/0-1/QE_Pseudo/NC' ,
+                      prefix = 'SCF' ,
+                   verbosity = 'high' ,
+                     tstress = .true. ,
+                     tprnfor = .true. ,
+ /
+ &amp;SYSTEM
+%s
+%s
+%s
+%s
+                     ecutwfc = 150 ,
+                 occupations = 'smearing' ,
+                     degauss = 3.6D-3 ,
+                    smearing = 'fermi-dirac' ,
+                        nbnd = 80 ,
+                       nosym = .true. ,
+ /
+ &amp;ELECTRONS
+            electron_maxstep = 150,
+                    conv_thr = 1.0D-13 ,
+                 mixing_mode = 'plain' ,
+                 mixing_beta = 0.3D0 ,
+             diagonalization = 'david' ,
+              diago_full_acc = .true. ,
+ /
+ATOMIC_SPECIES
+  Cr 51.996100d0 Cr.UPF
+  Se 78.960000d0 Se.UPF
+  Te 127.600000d0 Te.UPF
+%s    
+ K_POINTS crystal
+          91
+        0.0000000000    0.0000000000    0.0000000000    1.0
+        0.0151515152    0.0000000000    0.0000000000    1.0
+        0.0303030303    0.0000000000    0.0000000000    1.0
+        0.0454545455    0.0000000000    0.0000000000    1.0
+        0.0606060606    0.0000000000    0.0000000000    1.0
+        0.0757575758    0.0000000000    0.0000000000    1.0
+        0.0909090909    0.0000000000    0.0000000000    1.0
+        0.1060606061    0.0000000000    0.0000000000    1.0
+        0.1212121212    0.0000000000    0.0000000000    1.0
+        0.1363636364    0.0000000000    0.0000000000    1.0
+        0.1515151515    0.0000000000    0.0000000000    1.0
+        0.1666666667    0.0000000000    0.0000000000    1.0
+        0.1818181818    0.0000000000    0.0000000000    1.0
+        0.1969696970    0.0000000000    0.0000000000    1.0
+        0.2121212121    0.0000000000    0.0000000000    1.0
+        0.2272727273    0.0000000000    0.0000000000    1.0
+        0.2424242424    0.0000000000    0.0000000000    1.0
+        0.2575757576    0.0000000000    0.0000000000    1.0
+        0.2727272727    0.0000000000    0.0000000000    1.0
+        0.2878787879    0.0000000000    0.0000000000    1.0
+        0.3030303030    0.0000000000    0.0000000000    1.0
+        0.3181818182    0.0000000000    0.0000000000    1.0
+        0.3333333333    0.0000000000    0.0000000000    1.0
+        0.3484848485    0.0000000000    0.0000000000    1.0
+        0.3636363636    0.0000000000    0.0000000000    1.0
+        0.3787878788    0.0000000000    0.0000000000    1.0
+        0.3939393939    0.0000000000    0.0000000000    1.0
+        0.4090909091    0.0000000000    0.0000000000    1.0
+        0.4242424242    0.0000000000    0.0000000000    1.0
+        0.4393939394    0.0000000000    0.0000000000    1.0
+        0.4545454545    0.0000000000    0.0000000000    1.0
+        0.4696969697    0.0000000000    0.0000000000    1.0
+        0.4848484848    0.0000000000    0.0000000000    1.0
+        0.5000000000    0.0000000000    0.0000000000    1.0
+        0.4912278947    0.0175436842    0.0000000000    1.0
+        0.4824557895    0.0350873684    0.0000000000    1.0
+        0.4736836842    0.0526310526    0.0000000000    1.0
+        0.4649115789    0.0701747368    0.0000000000    1.0
+        0.4561394737    0.0877184211    0.0000000000    1.0
+        0.4473673684    0.1052621053    0.0000000000    1.0
+        0.4385952632    0.1228057895    0.0000000000    1.0
+        0.4298231579    0.1403494737    0.0000000000    1.0
+        0.4210510526    0.1578931579    0.0000000000    1.0
+        0.4122789474    0.1754368421    0.0000000000    1.0
+        0.4035068421    0.1929805263    0.0000000000    1.0
+        0.3947347368    0.2105242105    0.0000000000    1.0
+        0.3859626316    0.2280678947    0.0000000000    1.0
+        0.3771905263    0.2456115789    0.0000000000    1.0
+        0.3684184211    0.2631552632    0.0000000000    1.0
+        0.3596463158    0.2806989474    0.0000000000    1.0
+        0.3508742105    0.2982426316    0.0000000000    1.0
+        0.3421021053    0.3157863158    0.0000000000    1.0
+        0.3333300000    0.3333300000    0.0000000000    1.0
+        0.3245581579    0.3245581579    0.0000000000    1.0
+        0.3157863158    0.3157863158    0.0000000000    1.0
+        0.3070144737    0.3070144737    0.0000000000    1.0
+        0.2982426316    0.2982426316    0.0000000000    1.0
+        0.2894707895    0.2894707895    0.0000000000    1.0
+        0.2806989474    0.2806989474    0.0000000000    1.0
+        0.2719271053    0.2719271053    0.0000000000    1.0
+        0.2631552632    0.2631552632    0.0000000000    1.0
+        0.2543834211    0.2543834211    0.0000000000    1.0
+        0.2456115789    0.2456115789    0.0000000000    1.0
+        0.2368397368    0.2368397368    0.0000000000    1.0
+        0.2280678947    0.2280678947    0.0000000000    1.0
+        0.2192960526    0.2192960526    0.0000000000    1.0
+        0.2105242105    0.2105242105    0.0000000000    1.0
+        0.2017523684    0.2017523684    0.0000000000    1.0
+        0.1929805263    0.1929805263    0.0000000000    1.0
+        0.1842086842    0.1842086842    0.0000000000    1.0
+        0.1754368421    0.1754368421    0.0000000000    1.0
+        0.1666650000    0.1666650000    0.0000000000    1.0
+        0.1578931579    0.1578931579    0.0000000000    1.0
+        0.1491213158    0.1491213158    0.0000000000    1.0
+        0.1403494737    0.1403494737    0.0000000000    1.0
+        0.1315776316    0.1315776316    0.0000000000    1.0
+        0.1228057895    0.1228057895    0.0000000000    1.0
+        0.1140339474    0.1140339474    0.0000000000    1.0
+        0.1052621053    0.1052621053    0.0000000000    1.0
+        0.0964902632    0.0964902632    0.0000000000    1.0
+        0.0877184211    0.0877184211    0.0000000000    1.0
+        0.0789465789    0.0789465789    0.0000000000    1.0
+        0.0701747368    0.0701747368    0.0000000000    1.0
+        0.0614028947    0.0614028947    0.0000000000    1.0
+        0.0526310526    0.0526310526    0.0000000000    1.0
+        0.0438592105    0.0438592105    0.0000000000    1.0
+        0.0350873684    0.0350873684    0.0000000000    1.0
+        0.0263155263    0.0263155263    0.0000000000    1.0
+        0.0175436842    0.0175436842    0.0000000000    1.0
+        0.0087718421    0.0087718421    0.0000000000    1.0
+        0.0000000000    0.0000000000    0.0000000000    1.0</string>
+    </property>
+    <property name="overwriteMode">
+     <bool>true</bool>
+    </property>
+    <property name="cursorWidth">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_AddFile">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>800</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add File</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Exit">
+    <property name="geometry">
+     <rect>
+      <x>1030</x>
+      <y>800</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Overwrite">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>800</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Overwrite</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Message">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>800</y>
+      <width>451</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_MaterialInformation">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>114</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Material Name : Si
+alat = 5.4306</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ScrollArea</class>
+ <widget class="QScrollArea" name="ScrollArea">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>505</width>
+    <height>190</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ScrollArea</string>
+  </property>
+  <property name="widgetResizable">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="scrollAreaWidgetContents">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>502</width>
+     <height>187</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label_MainHeading">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>3</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <strikeout>false</strikeout>
+      <kerning>true</kerning>
+     </font>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="text">
+     <string>2D Materials Data</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_MaterialName">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>351</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Material Name by symbol (ex. MoS2)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_LatticeParameter">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>221</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Lattice Parameter (in angstrom)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_MaterialName">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>30</y>
+      <width>241</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_LatticeParameter">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>60</y>
+      <width>241</width>
+      <height>23</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_AddData">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>100</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add Data</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Exit">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>100</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Overwrite">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>100</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Overwrite</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Message">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>491</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
